@@ -1,7 +1,5 @@
 // 公共webpack配置
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-// 根基当前环境来选择不同的配置项
-const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
   module: {

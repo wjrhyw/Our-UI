@@ -3,7 +3,6 @@ const common = require("./webpack.common");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const merge = require("webpack-merge");
-// 更具mode来获取当前的环境，通过process.env.NODE_ENV
 const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = merge(common, {
@@ -11,7 +10,6 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: devMode ? "man.js" : "main.[chunkhash].js",
-    // 打包之后，静态资源文件的公共查找路径
     publicPath: devMode ? "" : "./",
   },
   mode: "development",
@@ -19,7 +17,6 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: path.resolve(__dirname, "src/index.html"),
-      // 可要可不要，通过devserver不需要这个
       //   hash: true,
     }),
     new MiniCssExtractPlugin({
