@@ -1,0 +1,17 @@
+// babel-loader的配置选项
+{
+  "presets": [
+    [
+      // babel-preset-env ==> es新特性的支持
+      "@babel/preset-env",
+      {
+        // 为了性能优化，不需要全部加载babel-loader中的内容，指定运行环境，只加载所需要的内容
+        "targets": {
+          "browsers": ["ie>=8", "chrome>=62"]
+        }
+      }
+    ],
+    // babel-preset-react ==> react，jsx语法的支持
+    "@babel/preset-react"
+  ]
+}
