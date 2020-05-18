@@ -7,7 +7,12 @@ module.exports = {
       // less转换配置
       {
         test: /\.less/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "less-loader",
+        ],
       },
       // jsx，es新特性支持
       {
@@ -23,8 +28,8 @@ module.exports = {
             loader: "url-loader",
             options: {
               limit: 1024,
-              outputPath:'img',
-              publicPath:'./img'
+              outputPath: "img",
+              publicPath: "./img",
             },
           },
         ],
