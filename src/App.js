@@ -1,5 +1,5 @@
 import React from 'react';
-import x from './assets/x';
+import x from './assets/x.jpg';
 
 const App = () => {
     return (

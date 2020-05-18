@@ -4,5 +4,3 @@ import './index.less';
 import App from './App';
 
 ReactDom.render(<App/>,document.getElementById('app'));
-
-console.log('第一次的打包');
