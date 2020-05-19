@@ -17,7 +17,7 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: path.resolve(__dirname, "src/index.html"),
-      // hash: !devMode,
+      hash: !devMode,
     }),
     new MiniCssExtractPlugin({
       filename: devMode ? "css/[name].css" : "css/[name].[contenthash].css",
