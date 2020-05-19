@@ -10,7 +10,7 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: devMode ? "main.js" : "main.[chunkhash].js",
-    publicPath: devMode ? "" : "./",
+    publicPath: devMode ? " " : "./",
   },
   mode: "development",
   plugins: [
@@ -28,6 +28,6 @@ module.exports = merge(common, {
     port: 9000,
     open: true,
     hot: true,
-    contentBase: './src/assets' //默认在根目录下寻找index，重定向在assets下
+    contentBase: './src' //默认在根目录下寻找index，重定向在src下
   },
 });
