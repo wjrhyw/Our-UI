@@ -13,7 +13,8 @@ module.exports = {
             {
               loader: MiniCssExtractPlugin.loader,
               options: {
-                publicPath: (resourcePath, context) => {
+                publicPath:
+                (resourcePath, context) => {
                   // 根据css目录动态判定层级
                   //  ./css/admin/main.css the publicPath will be ../../
                   //  ./css/main.css the publicPath will be ../
