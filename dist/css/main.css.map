@@ -1,1 +1,0 @@
-{"version":3,"file":"css/main.css","sources":["webpack:///./src/index.less"],"sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n}\nhtml {\n  font-size: 16px;\n}\n#app {\n  text-align: center;\n  padding: 0.1rem;\n  margin: 0;\n}\n"],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;","sourceRoot":""}
