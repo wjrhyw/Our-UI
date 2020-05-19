@@ -40,5 +40,11 @@
     "react-dom": "^16.13.1",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
