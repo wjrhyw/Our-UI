@@ -4,3 +4,4 @@ import './index.less';
 import App from './App';
 
 ReactDom.render(<App/>,document.getElementById('app'));
+console.lo('xxxx')
