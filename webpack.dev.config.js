@@ -23,7 +23,7 @@ module.exports = merge(common, {
     // 比如如果打包之后js文件在js文件夹中，index.html文件在html文件夹中,那么久就需要配置为../
     // publicPath应该以'/'结尾，同时其他loader或插件的配置不要以'/'开头
     // 默认情况下loader和插件的publicpath配置会从这获取
-    publicPath: './'
+    publicPath: devMode ? "" : "./",
     // 总结一个公式：打包之后引用的静态资源文件的路径=output.publicpath+filename/name
   },
   mode: "development",
@@ -43,6 +43,6 @@ module.exports = merge(common, {
     port: 9000,
     open: true,
     hot: true,
-    contentBase: 'dist',
+    contentBase: "dist",
   },
 });
